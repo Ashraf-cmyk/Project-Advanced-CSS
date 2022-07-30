@@ -1,0 +1,79 @@
+/*Part 3 - Social "Media Buttons" begint hieronder*/
+$backgroundcolor: #c3cfe2;
+$font: Arial, Helvetica, sans-serif;
+
+@mixin sociallogo {
+  color: white;
+  margin: 10px;
+  margin-left: 25px;
+  font-size: 30px;
+}
+
+@mixin socialbtn($background, $topmargin) {
+  position: absolute;
+  top: $topmargin;
+  right: 0px;
+  width: 80px;
+  height: 50px;
+  background-color: $background;
+  transition-property: width;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  overflow: hidden;
+  &:hover {
+    width: 300px;
+  }
+}
+
+.socialmedia {
+  margin-top: 300px;
+  right: 0;
+  grid-area: opdracht3;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  a {
+    color: inherit;
+  }
+}
+
+.youtube {
+  @include socialbtn(#e17b77, 0px);
+}
+
+.twitter {
+  @include socialbtn(#00aced, 50px);
+}
+
+.linkedin {
+  @include socialbtn(#007bb6, 100px);
+}
+
+.facebook {
+  @include socialbtn(#3b5998, 150px);
+}
+
+.github {
+  @include socialbtn(#333, 200px);
+}
+
+/*icoontjes knoppen menu hieronder*/
+.fa-youtube {
+  @include sociallogo();
+}
+
+.fa-twitter {
+  @include sociallogo();
+}
+
+.fa-linkedin {
+  @include sociallogo();
+}
+
+.fa-facebook {
+  @include sociallogo();
+}
+
+.fa-github {
+  @include sociallogo();
+} /*# sourceMappingURL=styles.css.map */

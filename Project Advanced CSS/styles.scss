@@ -1,0 +1,14 @@
+@import "./opdracht1";
+@import "./opdracht2";
+@import "./opdracht3";
+
+/*Ik vond het wel leuk om opdracht 1 en 3  samen te voegen 
+zodat het lijkt alsof het menu uit de testimonial komt vandaar het opdrachten grid*/
+.opdrachtengrid {
+  display: grid;
+  background-color: $backgroundcolor;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "opdracht3 opdracht1" "opdracht2 opdracht2";
+}

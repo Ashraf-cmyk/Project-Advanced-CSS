@@ -1,0 +1,263 @@
+/*Part 1 - "Testimonial" hieronder*/
+.opdracht1 {
+  grid-area: opdracht1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #c3cfe2;
+  height: 100vh;
+}
+.opdracht1 .body {
+  display: block;
+  width: 600px;
+  height: 750px;
+  border-radius: 20px;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(94, 94, 94);
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  line-height: 1.6;
+  box-shadow: rgb(85, 85, 85) 5px 10px 10px;
+  margin-bottom: 100px;
+}
+.opdracht1 .bodytext {
+  padding: 50px;
+  margin-bottom: 30px;
+}
+.opdracht1 .image {
+  position: absolute;
+}
+.opdracht1 img {
+  max-width: 100%;
+  height: auto;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+  margin-left: 220px;
+  margin-top: -90px;
+}
+.opdracht1 .footer {
+  background-color: #686de0;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 50px;
+  font-size: large;
+}
+.opdracht1 h1,
+.opdracht1 h2 {
+  margin: 0;
+}
+.opdracht1 h1 {
+  margin-top: 50px;
+}
+.opdracht1 h2 {
+  color: #8b8fee;
+}
+
+body {
+  margin: 0;
+}
+
+/*Part 2 - "Portfolio Grid" hieronder*/
+.opdracht2 {
+  grid-area: opdracht2;
+}
+.opdracht2 .parent {
+  display: grid;
+  background-color: #c3cfe2;
+  grid-template-columns: auto-fit, minmax(300px, 1fr);
+  width: 100%;
+  grid-gap: 10px;
+}
+.opdracht2 .parent .child1 {
+  position: relative;
+  margin: 0px auto 0;
+  width: 100%;
+  background-color: #111720;
+  border-radius: 20px;
+  z-index: 1;
+}
+.opdracht2 .foto {
+  display: grid;
+  grid-gap: 20px;
+  width: 100%;
+  border: 0px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  transition: ease-in-out 250ms;
+}
+.opdracht2 .foto:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+.opdracht2 button {
+  position: absolute;
+  z-index: -1;
+  left: 45%;
+  top: 50%;
+  padding: 10px;
+}
+
+/*media queries 
+
+  Tablets (portrait)*/
+@media (min-width: 768px) {
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* Desktop */
+@media (min-width: 1024px) {
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+/*Part 3 - Social "Media Buttons" begint hieronder*/
+.socialmedia {
+  margin-top: 300px;
+  right: 0;
+  grid-area: opdracht3;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.socialmedia a {
+  color: inherit;
+}
+
+.youtube {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 80px;
+  height: 50px;
+  background-color: #e17b77;
+  transition-property: width;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  overflow: hidden;
+}
+.youtube:hover {
+  width: 300px;
+}
+
+.twitter {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 80px;
+  height: 50px;
+  background-color: #00aced;
+  transition-property: width;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  overflow: hidden;
+}
+.twitter:hover {
+  width: 300px;
+}
+
+.linkedin {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  width: 80px;
+  height: 50px;
+  background-color: #007bb6;
+  transition-property: width;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  overflow: hidden;
+}
+.linkedin:hover {
+  width: 300px;
+}
+
+.facebook {
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  width: 80px;
+  height: 50px;
+  background-color: #3b5998;
+  transition-property: width;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  overflow: hidden;
+}
+.facebook:hover {
+  width: 300px;
+}
+
+.github {
+  position: absolute;
+  top: 200px;
+  right: 0px;
+  width: 80px;
+  height: 50px;
+  background-color: #333;
+  transition-property: width;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  overflow: hidden;
+}
+.github:hover {
+  width: 300px;
+}
+
+/*icoontjes knoppen menu hieronder*/
+.fa-youtube {
+  color: white;
+  margin: 10px;
+  margin-left: 25px;
+  font-size: 30px;
+}
+
+.fa-twitter {
+  color: white;
+  margin: 10px;
+  margin-left: 25px;
+  font-size: 30px;
+}
+
+.fa-linkedin {
+  color: white;
+  margin: 10px;
+  margin-left: 25px;
+  font-size: 30px;
+}
+
+.fa-facebook {
+  color: white;
+  margin: 10px;
+  margin-left: 25px;
+  font-size: 30px;
+}
+
+.fa-github {
+  color: white;
+  margin: 10px;
+  margin-left: 25px;
+  font-size: 30px;
+} /*# sourceMappingURL=styles.css.map */
+
+/*Ik vond het wel leuk om opdracht 1 en 3  samen te voegen 
+zodat het lijkt alsof het menu uit de testimonial komt vandaar het opdrachten grid*/
+.opdrachtengrid {
+  display: grid;
+  background-color: #c3cfe2;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "opdracht3 opdracht1" "opdracht2 opdracht2";
+} /*# sourceMappingURL=styles.css.map */

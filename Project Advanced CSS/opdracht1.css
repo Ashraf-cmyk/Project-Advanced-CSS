@@ -1,0 +1,65 @@
+/*Part 1 - "Testimonial" hieronder*/
+.opdracht1 {
+  grid-area: opdracht1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #c3cfe2;
+  height: 100vh;
+}
+.opdracht1 .body {
+  display: block;
+  width: 600px;
+  height: 750px;
+  border-radius: 20px;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(94, 94, 94);
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  line-height: 1.6;
+  box-shadow: rgb(85, 85, 85) 5px 10px 10px;
+  margin-bottom: 100px;
+}
+.opdracht1 .bodytext {
+  padding: 50px;
+  margin-bottom: 30px;
+}
+.opdracht1 .image {
+  position: absolute;
+}
+.opdracht1 img {
+  max-width: 100%;
+  height: auto;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+  margin-left: 220px;
+  margin-top: -90px;
+}
+.opdracht1 .footer {
+  background-color: #686de0;
+  text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding: 50px;
+  font-size: large;
+}
+.opdracht1 h1,
+.opdracht1 h2 {
+  margin: 0;
+}
+.opdracht1 h1 {
+  margin-top: 50px;
+}
+.opdracht1 h2 {
+  color: #8b8fee;
+}
+
+body {
+  margin: 0;
+}/*# sourceMappingURL=opdracht1.css.map */

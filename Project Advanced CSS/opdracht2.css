@@ -1,0 +1,58 @@
+/*Part 2 - "Portfolio Grid" hieronder*/
+.opdracht2 {
+  grid-area: opdracht2;
+}
+.opdracht2 .parent {
+  display: grid;
+  background-color: #c3cfe2;
+  grid-template-columns: auto-fit, minmax(300px, 1fr);
+  width: 100%;
+  grid-gap: 10px;
+}
+.opdracht2 .parent .child1 {
+  position: relative;
+  margin: 0px auto 0;
+  width: 100%;
+  background-color: #111720;
+  border-radius: 20px;
+  z-index: 1;
+}
+.opdracht2 .foto {
+  display: grid;
+  grid-gap: 20px;
+  width: 100%;
+  border: 0px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  transition: ease-in-out 250ms;
+}
+.opdracht2 .foto:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+.opdracht2 button {
+  position: absolute;
+  z-index: -1;
+  left: 45%;
+  top: 50%;
+  padding: 10px;
+}
+
+/*media queries 
+
+  Tablets (portrait)*/
+@media (min-width: 768px) {
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* Desktop */
+@media (min-width: 1024px) {
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=opdracht2.css.map */
